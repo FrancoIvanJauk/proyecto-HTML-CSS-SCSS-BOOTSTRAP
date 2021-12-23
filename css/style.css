@@ -1,0 +1,1754 @@
+@charset "UTF-8";
+/* mapa */
+/* fin de mapa */
+/* mixins */
+/* fin de mixins */
+@media only screen and (min-width: 0px) and (max-width: 518px) {
+  /* para sacar el overflow-x */
+  body {
+    overflow-x: hidden; }
+  /* nav */
+  /* tamaño del icono de el nav */
+  .icono-nav {
+    height: 50px;
+    width: 50px; }
+  /* fin de tamaño del icono de el nav */
+  /* posicionamiento y tamaño de las palabras de navegacion nav */
+  .navbar-nav {
+    margin-left: auto; }
+  .navbar {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  /* fin de posicionamiento y tamaño de las palabras de navegacion nav */
+  /* fin de nav */
+  /* empieza el main del index */
+  /* grid del main */
+  .main-index {
+    display: grid;
+    grid-template-rows: 3, 1fr;
+    grid-template-areas: "titulo-principal" "fotos-prinicpales" "textos-principales"; }
+  .titulo-principal {
+    grid-area: titulo-principal; }
+  .fotos-main-principal {
+    grid-area: fotos-prinicpales; }
+  .textos-main {
+    grid-area: textos-principales; }
+  /* fin del grid del main */
+  .titulo-principal {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: Zen Antique; }
+  /* visual de las imagenes */
+  .imagen-calafate-main {
+    width: 80%;
+    height: 400px;
+    margin-top: 80px;
+    background-image: url(../imagenes/calafate.jpg);
+    background-position: center;
+    background-size: 200px 400px;
+    background-attachment: fixed;
+    position: absolute;
+    background-repeat: no-repeat; }
+  .imagen-montania-main {
+    position: relative;
+    object-fit: cover;
+    width: 120px;
+    height: 200px;
+    margin-top: 200px; }
+  .imagen-cascada-main {
+    position: relative;
+    object-fit: cover;
+    width: 120px;
+    height: 200px;
+    margin-top: 200px;
+    float: right; }
+  /* fin de la visual de las imagenes */
+  /* grid del texto dentro del grid del main y posicionamiento*/
+  .textos-main {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-content: space-between;
+    margin-top: 130px;
+    text-align: center; }
+  /* fin del grid del texto dentro del grid del main y posicionamiento */
+  /* visual del texto principal */
+  .texto-principal {
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+  /* fin de visual de texto principal */
+  /* Curiosidades de argentina */
+  /* titulo */
+  .subtitulo-index {
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: Zen Antique; }
+  /* fin del titulo */
+  /* Rio mas ancho del mundo */
+  /* grid */
+  .caja-madre-laPlata {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img-laPlata" "info-laPlata"; }
+  .img-laPlata {
+    grid-area: img-laPlata; }
+  .caja-info-laPlata {
+    grid-area: info-laPlata; }
+  /* fin de grid */
+  /* detalles, tamaños y posicionamientos */
+  .caja-madre-laPlata {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 500px; }
+  .img-laPlata {
+    background-image: url(../imagenes/LaPlata.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+  .caja-info-laPlata {
+    overflow-y: auto; }
+  .titulo-laPlata {
+    text-align: center;
+    font-size: 20px;
+    font-family: Zen Antique; }
+  .texto-laPlata {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif; }
+  /* fin de detalles, tamaños y posicionamientos */
+  /* fin de rio mas ancho del mundo */
+  /* el arte rupestre mas antiguo de america */
+  /* grid */
+  .caja-madre-arte {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img-arte" "info-arte"; }
+  .img-arte {
+    grid-area: img-arte; }
+  .caja-info-arte {
+    grid-area: info-arte; }
+  /* fin de grid */
+  /* detalles, tamaños y posicionamientos */
+  .caja-madre-arte {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 500px; }
+  .img-arte {
+    background-image: url(../imagenes/cueva-de-las-manos.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+  .caja-info-arte {
+    overflow-y: auto; }
+  .titulo-arte {
+    text-align: center;
+    font-size: 20px;
+    font-family: Zen Antique; }
+  .texto-arte {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif; }
+  /* fin de detalles, tamaños y posicionamientos */
+  /* fin del arte rupestre mas antiguo de america */
+  /* montaña con el pico mas alto de america */
+  /* grid */
+  .caja-madre-pico {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img-pico" "info-pico"; }
+  .img-pico {
+    grid-area: img-pico; }
+  .caja-info-pico {
+    grid-area: info-pico; }
+  /* fin de grid */
+  /* detalles, tamaños y posicionamientos */
+  .caja-madre-pico {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 500px; }
+  .img-pico {
+    background-image: url(../imagenes/montaña-pico.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+  .caja-info-pico {
+    overflow-y: auto; }
+  .titulo-pico {
+    text-align: center;
+    font-size: 20px;
+    font-family: Zen Antique; }
+  .texto-pico {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif; }
+  /* fin de detalles, tamaños y posicionamientos */
+  /* fin de montaña con el pico mas alto de america */
+  /* Fin de curiosidades de argentina */
+  /* fin del main del index */
+  /* emieza main lugares */
+  /* detalles de carrusel */
+  .carrusel {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.377); }
+  .fotos-carrusel-lugares {
+    height: 500px; }
+  .foto-lugares {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center; }
+  /* fin de detalles de carrusel */
+  /* grid main lugares misiones */
+  .caja-misiones-lugares {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img-misiones-lugares"   "caja-misiones-lugares"; }
+  .img-misiones-lugares {
+    grid-area: img-misiones-lugares; }
+  .caja-hija-misiones-lugares {
+    grid-area: caja-misiones-lugares; }
+  /* fin grid lugares misiones */
+  /* detelles y posicionamiento misiones */
+  .caja-hija-misiones-lugares {
+    overflow-y: auto; }
+  .img-misiones-lugares {
+    background-image: url(../imagenes/misiones.jpg);
+    background-size: cover;
+    background-position: center; }
+  .titulo-misiones-lugares {
+    font-size: 20px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-caja-hija-misiones-lugares {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    text-align: center; }
+  .caja-misiones-lugares {
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 800px; }
+  /* fin de detalles y posicionamiento misiones */
+  /* grid main lugares neuquen */
+  .caja-neuquen-lugares {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img-neuquen-lugares"   "caja-neuquen-lugares"; }
+  .img-neuquen-lugares {
+    grid-area: img-neuquen-lugares; }
+  .caja-hija-neuquen-lugares {
+    grid-area: caja-neuquen-lugares; }
+  /* fin grid lugares neuquen */
+  /* detelles y posicionamiento neuquen */
+  .caja-hija-neuquen-lugares {
+    overflow-y: auto; }
+  .img-neuquen-lugares {
+    background-image: url(../imagenes/neuquen.jpg);
+    background-size: cover;
+    background-position: center; }
+  .titulo-neuquen-lugares {
+    font-size: 20px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-caja-hija-neuquen-lugares {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    text-align: center; }
+  .caja-neuquen-lugares {
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 800px; }
+  /* fin de detalles y posicionamiento neuquen */
+  /* grid main lugares Tierra del fuego */
+  .caja-tierraDelFuego-lugares {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img-tierraDelFuego-lugares"   "caja-tierraDelFuego-lugares"; }
+  .img-tierraDelFuego-lugares {
+    grid-area: img-tierraDelFuego-lugares; }
+  .caja-hija-tierraDelFuego-lugares {
+    grid-area: caja-tierraDelFuego-lugares; }
+  /* fin grid lugares Tierra del fuego */
+  /* detelles y posicionamiento Tierra del fuego */
+  .caja-hija-tierraDelFuego-lugares {
+    overflow-y: auto; }
+  .img-tierraDelFuego-lugares {
+    background-image: url(../imagenes/tierraDelFuego.jpg);
+    background-size: cover;
+    background-position: center; }
+  .titulo-tierraDelFuego-lugares {
+    font-size: 20px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-caja-hija-tierraDelFuego-lugares {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    text-align: center; }
+  .caja-tierraDelFuego-lugares {
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 800px; }
+  /* fin de detalles y posicionamiento Tierra del fuego */
+  /* fin de main lugares */
+  /* empieza el main hoteles */
+  /* grid de misiones */
+  .caja-misiones-hoteles {
+    display: grid;
+    grid-template-rows: 55% 40% 15%;
+    grid-template-areas: " img-misiones-hoteles"   "caja-hija-misiones-hoteles"   "boton-hoteles"; }
+  .img-misiones-hoteles {
+    grid-area: img-misiones-hoteles; }
+  .caja-hija-misiones-hoteles {
+    grid-area: caja-hija-misiones-hoteles; }
+  .boton-hoteles {
+    grid-area: boton-hoteles; }
+  /* fin de grid misiones */
+  /* detalles y centrado de misiones */
+  .caja-misiones-hoteles {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    height: 800px; }
+  .img-misiones-hoteles {
+    background-image: url(../imagenes/hotel-misiones.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto; }
+  .caja-hija-misiones-hoteles {
+    overflow-y: auto; }
+  .titulo-misiones-hoteles {
+    font-size: 20px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-misiones-hoteles {
+    font-size: 15px;
+    text-align: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif; }
+  .boton-hoteles {
+    text-align: center; }
+  .boton-misiones-hoteles {
+    padding: 10px 15px;
+    margin-top: 10px; }
+  /* fin de detalles y centrado misiones */
+  /* grid de neuquen */
+  .caja-neuquen-hoteles {
+    display: grid;
+    grid-template-rows: 55% 40% 15%;
+    grid-template-areas: " img-neuquen-hoteles"   "caja-hija-neuquen-hoteles"   "boton-hoteles"; }
+  .img-neuquen-hoteles {
+    grid-area: img-neuquen-hoteles; }
+  .caja-hija-neuquen-hoteles {
+    grid-area: caja-hija-neuquen-hoteles; }
+  .boton-hoteles {
+    grid-area: boton-hoteles; }
+  /* fin de grid neuquen */
+  /* detalles y centrado de neuquen */
+  .caja-neuquen-hoteles {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    height: 800px; }
+  .caja-hija-neuquen-hoteles {
+    overflow-y: auto; }
+  .img-neuquen-hoteles {
+    background-image: url(../imagenes/hotel-neuquen.webp);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto; }
+  .titulo-neuquen-hoteles {
+    font-size: 20px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-neuquen-hoteles {
+    font-size: 15px;
+    text-align: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif; }
+  .boton-neuquen-hoteles {
+    padding: 10px 15px;
+    margin-top: 10px; }
+  /* fin de detalles y centrado neuquen */
+  /* grid de tierra del fuego */
+  .caja-tierraDelFuego-hoteles {
+    display: grid;
+    grid-template-rows: 55% 40% 15%;
+    grid-template-areas: " img-tierraDelFuego-hoteles"   "caja-hija-tierraDelFuego-hoteles"   "boton-hoteles"; }
+  .img-tierraDelFuego-hoteles {
+    grid-area: img-tierraDelFuego-hoteles; }
+  .caja-hija-tierraDelFuego-hoteles {
+    grid-area: caja-hija-tierraDelFuego-hoteles; }
+  .boton-hoteles {
+    grid-area: boton-hoteles; }
+  /* fin de grid tierra del fuego */
+  /* detalles y centrado de tierra del fuego */
+  .caja-tierraDelFuego-hoteles {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    height: 800px; }
+  .caja-hija-tierraDelFuego-hoteles {
+    overflow-y: auto; }
+  .img-tierraDelFuego-hoteles {
+    background-image: url(../imagenes/hoteles-tierraDelFuego.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto; }
+  .titulo-tierraDelFuego-hoteles {
+    font-size: 20px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-tierraDelFuego-hoteles {
+    font-size: 15px;
+    text-align: center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif; }
+  .boton-tierraDelFuego-hoteles {
+    padding: 10px 15px;
+    margin-top: 10px; }
+  /* fin de detalles y centrado tierra del fuego */
+  /* fin main hoteles */
+  /* inicio de main nosotros */
+  /* grid de main nosotros */
+  .caja-madre-nosotros {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: " logo-nosotros " " info-nosotros "; }
+  .caja-logo-nosotros {
+    grid-area: logo-nosotros; }
+  .caja-info-nosotros {
+    grid-area: info-nosotros; }
+  /* fin grid de main nosotros */
+  /* detalles y posicionamientos */
+  .caja-logo-nosotros {
+    height: 500px;
+    background-color: rgba(255, 255, 250, 0.39); }
+  .caja-madre-nosotros {
+    background-image: url(../imagenes/body-nosotros.jpg);
+    background-position: center;
+    background-size: 1500px 1320px;
+    background-repeat: no-repeat;
+    object-fit: cover; }
+  .caja-info-nosotros {
+    height: 500px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.548);
+    overflow: auto; }
+  .titulo-texto-nosotros {
+    color: white;
+    margin-top: 60px;
+    font-family: Zen Antique; }
+  .texto-nosotros {
+    margin-top: 50px;
+    font-size: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; }
+  .titulo-nosotros {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: Zen Antique; }
+  .icono-nosotros {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto; }
+  /* fin de detalles y posicionamientos */
+  /* fin de main nosotros */
+  /* inicio de main contacto */
+  /* grid de main contacto */
+  .caja-formulario-contacto {
+    display: grid;
+    grid-template-rows: 1/2fr 1fr 1/2fr;
+    grid-template-areas: "info-grid" "textarea-contacto" "enviar-contacto"; }
+  .grid-info {
+    grid-area: info-grid; }
+  .caja-textarea {
+    grid-area: textarea-contacto; }
+  .input-enviar-contacto {
+    grid-area: enviar-contacto; }
+  .grid-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 25px; }
+  /* fin de grid main contacto */
+  /* detalles y posicionamiento main contacto */
+  .caja-madre-contacto {
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(../imagenes/fondo-contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0px 100px 0px; }
+  .caja-formulario-contacto {
+    background-color: rgba(185, 172, 172, 0.555);
+    border-radius: 50%;
+    height: 400px;
+    max-width: 400px;
+    min-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px; }
+  .textaria-contacto {
+    resize: none;
+    width: 250px;
+    height: 100px;
+    background-color: rgba(185, 172, 172, 0.555);
+    border: none;
+    margin-left: auto; }
+  .caja-textarea {
+    margin: 10px auto 10px auto; }
+  .input-contacto {
+    margin-bottom: 2px;
+    display: flex;
+    width: 150px;
+    background-color: rgba(185, 172, 172, 0.555);
+    border: none;
+    margin-left: auto;
+    margin-right: auto; }
+  .input-enviar-contacto {
+    background-color: rgba(185, 172, 172, 0.555);
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px; }
+  /* fin de detalles y posicionamiento de main contacto */
+  /* fin de main contacto */ }
+
+@media only screen and (min-width: 518px) and (max-width: 817px) {
+  /* para sacar el overflow-x */
+  body {
+    overflow-x: hidden; }
+  /* nav */
+  /* tamaño del icono de el nav */
+  .icono-nav {
+    height: 50px;
+    width: 50px; }
+  /* fin de tamaño del icono de el nav */
+  /* posicionamiento y tamaño de las palabras de navegacion nav */
+  .navbar-nav {
+    margin-left: auto; }
+  .navbar {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  /* fin de posicionamiento y tamaño de las palabras de navegacion nav */
+  /* fin de nav */
+  /* empieza el main del index */
+  /* grid del main */
+  .main-index {
+    display: grid;
+    grid-template-rows: 3, 1fr;
+    grid-template-areas: "titulo-principal" "fotos-prinicpales" "textos-principales"; }
+  .titulo-principal {
+    grid-area: titulo-principal; }
+  .fotos-main-principal {
+    grid-area: fotos-prinicpales; }
+  .textos-main {
+    grid-area: textos-principales; }
+  /* fin del grid del main */
+  .titulo-principal {
+    text-align: center;
+    font-size: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: Zen Antique; }
+  /* visual de las imagenes */
+  .imagen-calafate-main {
+    width: 80%;
+    height: 700px;
+    background-image: url(../imagenes/calafate.jpg);
+    background-position: center;
+    background-size: 500px 1000px;
+    background-attachment: fixed;
+    position: absolute;
+    background-repeat: no-repeat; }
+  .imagen-montania-main {
+    position: relative;
+    object-fit: cover;
+    width: 220px;
+    height: 350px;
+    margin-top: 200px; }
+  .imagen-cascada-main {
+    position: relative;
+    object-fit: cover;
+    width: 220px;
+    height: 350px;
+    margin-top: 200px;
+    float: right; }
+  /* fin de la visual de las imagenes */
+  /* grid del texto dentro del grid del main y posicionamiento*/
+  .textos-main {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
+    margin-top: 150px; }
+  /* fin del grid del texto dentro del grid del main y posicionamiento */
+  /* visual del texto principal */
+  .texto-principal {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+  /* fin de visual de texto principal */
+  /* Curiosidades de argentina */
+  /* titulo */
+  .subtitulo-index {
+    font-size: 45px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-family: Zen Antique; }
+  /* fin del titulo */
+  /* Rio mas ancho del mundo */
+  /* grid */
+  .caja-madre-laPlata {
+    display: grid;
+    grid-template-rows: 55% 45%;
+    grid-template-areas: "img-laPlata" "info-laPlata"; }
+  .img-laPlata {
+    grid-area: img-laPlata; }
+  .caja-info-laPlata {
+    grid-area: info-laPlata; }
+  /* fin de grid */
+  /* detalles, tamaños y posicionamientos */
+  .img-laPlata {
+    background-image: url(../imagenes/LaPlata.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+  .caja-madre-laPlata {
+    overflow-y: auto; }
+  .titulo-laPlata {
+    text-align: center;
+    font-size: 30px;
+    font-family: Zen Antique; }
+  .texto-laPlata {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+  /* fin de detalles, tamaños y posicionamientos */
+  /* fin de rio mas ancho del mundo */
+  /* el arte rupestre mas antiguo de america */
+  /* grid */
+  .caja-madre-arte {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img-arte" "info-arte"; }
+  .img-arte {
+    grid-area: img-arte; }
+  .caja-info-arte {
+    grid-area: info-arte; }
+  /* fin de grid */
+  /* detalles, tamaños y posicionamientos */
+  .img-arte {
+    background-image: url(../imagenes/cueva-de-las-manos.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+  .caja-info-arte {
+    overflow-y: auto; }
+  .titulo-arte {
+    text-align: center;
+    font-size: 30px;
+    font-family: Zen Antique; }
+  .texto-arte {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+  /* fin de detalles, tamaños y posicionamientos */
+  /* fin del arte rupestre mas antiguo de america */
+  /* la montaña con el pico mas alto de america */
+  /* grid */
+  .caja-madre-pico {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img-pico" "info-pico"; }
+  .img-pico {
+    grid-area: img-pico; }
+  .caja-info-pico {
+    grid-area: info-pico; }
+  /* fin de grid */
+  /* detalles, tamaños y posicionamientos */
+  .img-pico {
+    background-image: url(../imagenes/montaña-pico.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+  .caja-info-pico {
+    overflow-y: auto; }
+  .titulo-pico {
+    text-align: center;
+    font-size: 30px;
+    font-family: Zen Antique; }
+  .texto-pico {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+  /* fin de detalles, tamaños y posicionamientos */
+  /* fin de la montaña con el pico mas alto de america */
+  /* Fin de curiosidades de argentina */
+  /* fin del main del index */
+  /* emieza main lugares */
+  /* detalles de carrusel */
+  .carrusel {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.377); }
+  .fotos-carrusel-lugares {
+    height: 500px; }
+  .foto-lugares {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center; }
+  /* fin de detalles de carrusel */
+  /* grid main lugares misiones */
+  .caja-misiones-lugares {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img-misiones-lugares"   "caja-misiones-lugares"; }
+  .img-misiones-lugares {
+    grid-area: img-misiones-lugares; }
+  .caja-hija-misiones-lugares {
+    grid-area: caja-misiones-lugares; }
+  /* fin grid lugares misiones */
+  /* detelles y posicionamiento misiones */
+  .img-misiones-lugares {
+    background-image: url(../imagenes/misiones.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto; }
+  .titulo-misiones-lugares {
+    font-size: 25px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-caja-hija-misiones-lugares {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; }
+  .caja-misiones-lugares {
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 700px; }
+  .caja-hija-misiones-lugares {
+    overflow-y: auto; }
+  /* fin de detalles y posicionamiento misiones */
+  /* grid main lugares neuquen */
+  .caja-neuquen-lugares {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img-neuquen-lugares"   "caja-neuquen-lugares"; }
+  .img-neuquen-lugares {
+    grid-area: img-neuquen-lugares; }
+  .caja-hija-neuquen-lugares {
+    grid-area: caja-neuquen-lugares; }
+  /* fin grid lugares neuquen */
+  /* detelles y posicionamiento neuquen */
+  .img-neuquen-lugares {
+    background-image: url(../imagenes/neuquen.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+  .titulo-neuquen-lugares {
+    font-size: 25px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-caja-hija-neuquen-lugares {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center; }
+  .caja-neuquen-lugares {
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 700px; }
+  .caja-hija-neuquen-lugares {
+    overflow-y: auto; }
+  /* fin de detalles y posicionamiento neuquen */
+  /* grid main lugares Tierra del fuego */
+  .caja-tierraDelFuego-lugares {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "img-tierraDelFuego-lugares"   "caja-tierraDelFuego-lugares"; }
+  .img-tierraDelFuego-lugares {
+    grid-area: img-tierraDelFuego-lugares; }
+  .caja-hija-tierraDelFuego-lugares {
+    grid-area: caja-tierraDelFuego-lugares; }
+  /* fin grid lugares Tierra del fuego */
+  /* detelles y posicionamiento Tierra del fuego */
+  .img-tierraDelFuego-lugares {
+    background-image: url(../imagenes/tierraDelFuego.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+  .titulo-tierraDelFuego-lugares {
+    font-size: 25px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-caja-hija-tierraDelFuego-lugares {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-align: center; }
+  .caja-tierraDelFuego-lugares {
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 700px; }
+  .caja-hija-tierraDelFuego-lugares {
+    overflow-y: auto; }
+  /* fin de detalles y posicionamiento Tierra del fuego */
+  /* fin de main lugares */
+  /* empieza el main hoteles */
+  /* grid de misiones */
+  .caja-misiones-hoteles {
+    display: grid;
+    grid-template-rows: 55% 40% 15%;
+    grid-template-areas: " img-misiones-hoteles"   "caja-hija-misiones-hoteles"   "boton-hoteles"; }
+  .img-misiones-hoteles {
+    grid-area: img-misiones-hoteles; }
+  .caja-hija-misiones-hoteles {
+    grid-area: caja-hija-misiones-hoteles; }
+  .boton-hoteles {
+    grid-area: boton-hoteles; }
+  /* fin de grid misiones */
+  /* detalles y centrado de misiones */
+  .caja-misiones-hoteles {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    height: 700px; }
+  .img-misiones-hoteles {
+    background-image: url(../imagenes/hotel-misiones.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto; }
+  .caja-hija-misiones-hoteles {
+    overflow-y: auto; }
+  .titulo-misiones-hoteles {
+    font-size: 20px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-misiones-hoteles {
+    font-size: 15px;
+    text-align: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif; }
+  .boton-hoteles {
+    text-align: center; }
+  .boton-misiones-hoteles {
+    padding: 10px 15px;
+    margin-top: 10px; }
+  /* fin de detalles y centrado misiones */
+  /* grid de neuquen */
+  .caja-neuquen-hoteles {
+    display: grid;
+    grid-template-rows: 55% 40% 15%;
+    grid-template-areas: " img-neuquen-hoteles"   "caja-hija-neuquen-hoteles"   "boton-hoteles"; }
+  .img-neuquen-hoteles {
+    grid-area: img-neuquen-hoteles; }
+  .caja-hija-neuquen-hoteles {
+    grid-area: caja-hija-neuquen-hoteles; }
+  .boton-hoteles {
+    grid-area: boton-hoteles; }
+  /* fin de grid neuquen */
+  /* detalles y centrado de neuquen */
+  .caja-neuquen-hoteles {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    height: 700px; }
+  .caja-hija-neuquen-hoteles {
+    overflow-y: auto; }
+  .img-neuquen-hoteles {
+    background-image: url(../imagenes/hotel-neuquen.webp);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto; }
+  .titulo-neuquen-hoteles {
+    font-size: 20px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-neuquen-hoteles {
+    font-size: 15px;
+    text-align: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif; }
+  .boton-neuquen-hoteles {
+    padding: 10px 15px;
+    margin-top: 10px; }
+  /* fin de detalles y centrado neuquen */
+  /* grid de tierra del fuego */
+  .caja-tierraDelFuego-hoteles {
+    display: grid;
+    grid-template-rows: 55% 40% 15%;
+    grid-template-areas: " img-tierraDelFuego-hoteles"   "caja-hija-tierraDelFuego-hoteles"   "boton-hoteles"; }
+  .img-tierraDelFuego-hoteles {
+    grid-area: img-tierraDelFuego-hoteles; }
+  .caja-hija-tierraDelFuego-hoteles {
+    grid-area: caja-hija-tierraDelFuego-hoteles; }
+  .boton-hoteles {
+    grid-area: boton-hoteles; }
+  /* fin de grid tierra del fuego */
+  /* detalles y centrado de tierra del fuego */
+  .caja-tierraDelFuego-hoteles {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    height: 700px; }
+  .caja-hija-tierraDelFuego-hoteles {
+    overflow-y: auto; }
+  .img-tierraDelFuego-hoteles {
+    background-image: url(../imagenes/hoteles-tierraDelFuego.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto; }
+  .titulo-tierraDelFuego-hoteles {
+    font-size: 20px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-tierraDelFuego-hoteles {
+    font-size: 15px;
+    text-align: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif; }
+  .boton-tierraDelFuego-hoteles {
+    padding: 10px 15px;
+    margin-top: 10px; }
+  /* fin de detalles y centrado tierra del fuego */
+  /* fin main hoteles */
+  /* inicio de main nosotros */
+  /* grid de main nosotros */
+  .caja-madre-nosotros {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: " logo-nosotros " " info-nosotros "; }
+  .caja-logo-nosotros {
+    grid-area: logo-nosotros; }
+  .caja-info-nosotros {
+    grid-area: info-nosotros; }
+  /* fin grid de main nosotros */
+  /* detalles y posicionamientos */
+  .caja-logo-nosotros {
+    height: 500px;
+    background-color: rgba(255, 255, 250, 0.39); }
+  .caja-madre-nosotros {
+    background-image: url(../imagenes/body-nosotros.jpg);
+    background-position: center;
+    background-size: 1500px 1320px;
+    background-repeat: no-repeat;
+    object-fit: cover; }
+  .caja-info-nosotros {
+    height: 500px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.548);
+    overflow: auto; }
+  .titulo-texto-nosotros {
+    color: white;
+    margin-top: 70px;
+    font-family: Zen Antique; }
+  .texto-nosotros {
+    margin-top: 50px;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; }
+  .titulo-nosotros {
+    font-size: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .icono-nosotros {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto; }
+  /* fin de detalles y posicionamientos */
+  /* fin de main nosotros */
+  /* inicio de main contacto */
+  /* grid de main contacto */
+  .caja-formulario-contacto {
+    display: grid;
+    grid-template-rows: 1/2fr 1fr 1/2fr;
+    grid-template-areas: "info-grid" "textarea-contacto" "enviar-contacto"; }
+  .grid-info {
+    grid-area: info-grid; }
+  .caja-textarea {
+    grid-area: textarea-contacto; }
+  .input-enviar-contacto {
+    grid-area: enviar-contacto; }
+  .grid-info {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 25px; }
+  /* fin de grid main contacto */
+  /* detalles y posicionamiento main contacto */
+  .caja-madre-contacto {
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(../imagenes/fondo-contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0px 100px 0px; }
+  .caja-formulario-contacto {
+    background-color: rgba(185, 172, 172, 0.555);
+    border-radius: 50%;
+    height: 500px;
+    max-width: 600px;
+    min-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px; }
+  .textaria-contacto {
+    resize: none;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(185, 172, 172, 0.555);
+    border: none;
+    margin-left: auto; }
+  .caja-textarea {
+    margin: 10px auto 10px auto; }
+  .input-contacto {
+    margin-bottom: 2px;
+    display: flex;
+    width: 200px;
+    background-color: rgba(185, 172, 172, 0.555);
+    border: none;
+    margin-left: auto;
+    margin-right: auto; }
+  .input-enviar-contacto {
+    background-color: rgba(185, 172, 172, 0.555);
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px; }
+  /* fin de detalles y posicionamiento de main contacto */
+  /* fin de main contacto */ }
+
+/* fin de vista para celular */
+/* vista para desktop */
+@media only screen and (min-width: 817px) {
+  /* para sacar el overflow-x */
+  body {
+    overflow-x: hidden; }
+  /* nav */
+  /* tamaño del icono de el nav */
+  .icono-nav {
+    height: 50px;
+    width: 50px; }
+  /* fin de tamaño del icono de el nav */
+  /* posicionamiento y tamaño de las palabras de navegacion nav */
+  .navbar-nav {
+    margin-left: auto; }
+  .navbar {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  /* fin de posicionamiento y tamaño de las palabras de navegacion nav */
+  /* fin de nav */
+  /* empieza el main del index */
+  /* grid del main */
+  .main-index {
+    display: grid;
+    grid-template-rows: 3, 1fr;
+    grid-template-areas: "titulo-principal" "fotos-prinicpales" "textos-principales"; }
+  .titulo-principal {
+    grid-area: titulo-principal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: Zen Antique; }
+  .fotos-main-principal {
+    grid-area: fotos-prinicpales; }
+  .textos-main {
+    grid-area: textos-principales; }
+  /* fin del grid del main */
+  .titulo-principal {
+    text-align: center;
+    font-size: 200px; }
+  /* visual de las imagenes */
+  .imagen-calafate-main {
+    width: 80%;
+    height: 1200px;
+    background-image: url(../imagenes/calafate.jpg);
+    background-position: center;
+    background-size: 650px 1000px;
+    background-attachment: fixed;
+    position: absolute;
+    background-repeat: no-repeat; }
+  .imagen-montania-main {
+    position: relative;
+    object-fit: cover;
+    object-position: -425px;
+    width: 350px;
+    height: 700px;
+    margin-top: 200px;
+    margin-left: 50px; }
+  .imagen-cascada-main {
+    position: relative;
+    object-fit: cover;
+    width: 350px;
+    height: 700px;
+    margin-top: 200px;
+    margin-right: 50px;
+    float: right; }
+  /* fin de la visual de las imagenes */
+  /* grid del texto dentro del grid del main y posicionamiento*/
+  .textos-main {
+    display: grid;
+    grid-template-columns: 20% 20%;
+    justify-content: space-between;
+    margin: 50px;
+    z-index: 2; }
+  /* fin del grid del texto dentro del grid del main y posicionamiento */
+  /* animaciones para el titulo del index */
+  .titulo-principal {
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-iteration-count: 1; }
+  @keyframes aparecer {
+    from {
+      color: rgba(255, 255, 255, 0); }
+    to {
+      color: black; } }
+  /* fin de animaciones para el titulo del index */
+  /* visual del texto principal */
+  .texto-principal {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+  /* fin de visual de texto principal */
+  /* Curiosidades de argentina */
+  /* titulo */
+  .subtitulo-index {
+    font-size: 60px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+    font-family: Zen Antique; }
+  /* fin del titulo */
+  /* Rio mas ancho del mundo */
+  /* grid */
+  .caja-madre-laPlata {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "img-laPlata info-laPlata"; }
+  .img-laPlata {
+    grid-area: img-laPlata; }
+  .caja-info-laPlata {
+    grid-area: info-laPlata; }
+  /* fin de grid */
+  /* detalles, tamaños y posicionamientos */
+  .img-laPlata {
+    background-image: url(../imagenes/LaPlata.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 500px; }
+  .caja-info-laPlata {
+    overflow-y: auto;
+    overflow: hidden; }
+  .titulo-laPlata {
+    margin-top: 330px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Zen Antique; }
+  .texto-laPlata {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+  /* fin de detalles, tamaños y posicionamientos */
+  /* fin de rio mas ancho del mundo */
+  /* el arte rupestre mas antiguo de america */
+  /* grid */
+  .caja-madre-arte {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "info-arte img-arte"; }
+  .img-arte {
+    grid-area: img-arte; }
+  .caja-info-arte {
+    grid-area: info-arte; }
+  /* fin de grid */
+  /* detalles, tamaños y posicionamientos */
+  .caja-madre-arte {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .img-arte {
+    background-image: url(../imagenes/cueva-de-las-manos.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 500px; }
+  .caja-madre-arte {
+    overflow-y: auto;
+    overflow: hidden; }
+  .titulo-arte {
+    margin-top: 330px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Zen Antique; }
+  .texto-arte {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+  /* fin de detalles, tamaños y posicionamientos */
+  /* fin del arte rupestre mas antiguo de america */
+  /* la montaña con el pico mas alto de america */
+  /* grid */
+  .caja-madre-pico {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "img-pico info-pico"; }
+  .img-pico {
+    grid-area: img-pico; }
+  .caja-info-pico {
+    grid-area: info-pico; }
+  /* fin de grid */
+  /* detalles, tamaños y posicionamientos */
+  .caja-madre-pico {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .img-pico {
+    background-image: url(../imagenes/montaña-pico.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 500px; }
+  .caja-info-pico {
+    overflow-y: auto;
+    overflow: hidden; }
+  .titulo-pico {
+    margin-top: 330px;
+    text-align: center;
+    font-size: 40px;
+    font-family: Zen Antique; }
+  .texto-pico {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    width: 400px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif; }
+  /* fin de detalles, tamaños y posicionamientos */
+  /* fin de la contaña con el pico mas alto de america */
+  /* Fin de curiosidades de argentina */
+  /* fin del main del index */
+  /* emieza main lugares */
+  /* detalles de carrusel */
+  .carrusel {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    margin-top: 50px;
+    box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.377); }
+  .fotos-carrusel-lugares {
+    height: 500px; }
+  .foto-lugares {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center; }
+  /* fin de detalles de carrusel */
+  /* grid main lugares misiones */
+  .caja-misiones-lugares {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "img-misiones-lugares  caja-misiones-lugares"; }
+  .img-misiones-lugares {
+    grid-area: img-misiones-lugares; }
+  .caja-hija-misiones-lugares {
+    grid-area: caja-misiones-lugares; }
+  /* fin grid lugares misiones */
+  /* detelles y posicionamiento misiones */
+  .img-misiones-lugares {
+    background-image: url(../imagenes/misiones.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto; }
+  .titulo-misiones-lugares {
+    font-size: 25px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-caja-hija-misiones-lugares {
+    text-align: center;
+    width: 98%;
+    font-family: Arial, Helvetica, sans-serif; }
+  .caja-misiones-lugares {
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    margin: 50px 5px 30px 5px;
+    height: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .caja-hija-misiones-lugares {
+    overflow-y: auto; }
+  /* fin de detalles y posicionamiento misiones */
+  /* grid main lugares neuquen */
+  .caja-neuquen-lugares {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "caja-neuquen-lugares img-neuquen-lugares"; }
+  .img-neuquen-lugares {
+    grid-area: img-neuquen-lugares; }
+  .caja-hija-neuquen-lugares {
+    grid-area: caja-neuquen-lugares; }
+  /* fin grid lugares neuquen */
+  /* detelles y posicionamiento neuquen */
+  .img-neuquen-lugares {
+    background-image: url(../imagenes/neuquen.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto; }
+  .titulo-neuquen-lugares {
+    font-size: 25px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-caja-hija-neuquen-lugares {
+    text-align: center;
+    width: 98%;
+    font-family: Arial, Helvetica, sans-serif; }
+  .caja-neuquen-lugares {
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    height: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  /* fin de detalles y posicionamiento neuquen */
+  /* grid main lugares Tierra del fuego */
+  .caja-tierraDelFuego-lugares {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas: "img-tierraDelFuego-lugares  caja-tierraDelFuego-lugares"; }
+  .img-tierraDelFuego-lugares {
+    grid-area: img-tierraDelFuego-lugares; }
+  .caja-hija-tierraDelFuego-lugares {
+    grid-area: caja-tierraDelFuego-lugares; }
+  /* fin grid lugares Tierra del fuego */
+  /* detelles y posicionamiento Tierra del fuego */
+  .img-tierraDelFuego-lugares {
+    background-image: url(../imagenes/tierraDelFuego.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto; }
+  .titulo-tierraDelFuego-lugares {
+    font-size: 25px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-caja-hija-tierraDelFuego-lugares {
+    text-align: center;
+    width: 98%;
+    font-family: Arial, Helvetica, sans-serif; }
+  .caja-tierraDelFuego-lugares {
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    margin: 50px 5px 30px 5px;
+    height: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .caja-hija-tierraDelFuego-lugares {
+    overflow-y: auto; }
+  /* fin de detalles y posicionamiento Tierra del fuego */
+  /* fin de main lugares */
+  /* inicio de main hoteles */
+  /* grid de caja misiones */
+  .caja-misiones-hoteles {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-areas: " img-misiones-hoteles  caja-hija-misiones-hoteles  boton-hoteles"; }
+  .img-misiones-hoteles {
+    grid-area: img-misiones-hoteles;
+    margin-left: 10px; }
+  .caja-hija-misiones-hoteles {
+    grid-area: caja-hija-misiones-hoteles; }
+  .boton-hoteles {
+    grid-area: boton-hoteles; }
+  /* fin del grid de caja misiones */
+  /* tamaño y ediciones de caja misiones */
+  .caja-misiones-hoteles {
+    margin: 50px 5px 30px 5px;
+    background-color: rgba(244, 251, 252, 0.171);
+    border: 1px solid #ccc;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .img-misiones-hoteles {
+    background-image: url(../imagenes/hotel-misiones.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center; }
+  .caja-hija-misiones-hoteles {
+    overflow-y: auto; }
+  .titulo-misiones-hoteles {
+    font-size: 25px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-misiones-hoteles {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 98%; }
+  .boton-misiones-hoteles {
+    margin-top: 100px;
+    margin-left: 10px;
+    padding: 5px 10px; }
+  .boton-hoteles {
+    margin-left: auto;
+    margin-right: auto; }
+  /* fin de tamaño y ediciones de caja misiones */
+  /* grid de caja neuquen */
+  .caja-neuquen-hoteles {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-areas: " img-neuquen-hoteles  caja-hija-neuquen-hoteles  boton-hoteles"; }
+  .img-neuquen-hoteles {
+    grid-area: img-neuquen-hoteles;
+    margin-left: 10px; }
+  .caja-hija-neuquen-hoteles {
+    grid-area: caja-hija-neuquen-hoteles; }
+  .boton-hoteles {
+    grid-area: boton-hoteles; }
+  /* fin de grid caja neuquen */
+  /* tamaño y ediciones de caja neuquen */
+  .caja-neuquen-hoteles {
+    margin: 50px 5px 30px 5px;
+    background-color: rgba(244, 251, 252, 0.171);
+    height: 300px;
+    border: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .img-neuquen-hoteles {
+    background-image: url(../imagenes/hotel-neuquen.webp);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center; }
+  .caja-hija-neuquen-hoteles {
+    overflow-y: auto; }
+  .titulo-neuquen-hoteles {
+    font-size: 25px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-neuquen-hoteles {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 98%; }
+  .boton-neuquen-hoteles {
+    margin-top: 100px;
+    margin-left: 10px;
+    padding: 5px 10px; }
+  /* fin de tamaño y ediciones de caja neuquen */
+  /* grid de caja tierra del fuego */
+  .caja-tierraDelFuego-hoteles {
+    display: grid;
+    grid-template-columns: 40% 50% 10%;
+    grid-template-areas: " img-tierraDelFuego-hoteles  caja-hija-tierraDelFuego-hoteles  boton-hoteles"; }
+  .img-tierraDelFuego-hoteles {
+    grid-area: img-tierraDelFuego-hoteles;
+    margin-left: 10px; }
+  .caja-hija-tierraDelFuego-hoteles {
+    grid-area: caja-hija-tierraDelFuego-hoteles; }
+  .boton-hoteles {
+    grid-area: boton-hoteles; }
+  /* fin de grid caja tierra del fuego */
+  /* tamaño y ediciones de caja tierra del fuego */
+  .caja-tierraDelFuego-hoteles {
+    margin: 50px 5px 30px 5px;
+    background-color: rgba(244, 251, 252, 0.171);
+    height: 300px;
+    border: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .img-tierraDelFuego-hoteles {
+    background-image: url(../imagenes/hoteles-tierraDelFuego.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center; }
+  .caja-hija-tierraDelFuego-hoteles {
+    overflow-y: auto; }
+  .titulo-tierraDelFuego-hoteles {
+    font-size: 25px;
+    text-align: center;
+    font-family: Zen Antique; }
+  .texto-tierraDelFuego-hoteles {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 98%; }
+  .boton-tierraDelFuego-hoteles {
+    margin-top: 100px;
+    margin-left: 10px;
+    padding: 5px 10px; }
+  /* fin de tamaño y ediciones de caja tierra del fuego */
+  /* fin del main hoteles */
+  /* inicio de main nosotros */
+  /* grid de main nosotros */
+  .caja-madre-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: " logo-nosotros  info-nosotros "; }
+  .caja-logo-nosotros {
+    grid-area: logo-nosotros; }
+  .caja-info-nosotros {
+    grid-area: info-nosotros; }
+  /* fin grid de main nosotros */
+  /* detalles y posicionamientos */
+  .caja-logo-nosotros {
+    height: 600px;
+    background-color: rgba(255, 255, 250, 0.39); }
+  .caja-madre-nosotros {
+    background-image: url(../imagenes/body-nosotros.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .caja-info-nosotros {
+    height: 600px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.548);
+    overflow: auto; }
+  .titulo-texto-nosotros {
+    margin-top: 100px;
+    color: white;
+    font-family: Zen Antique; }
+  .texto-nosotros {
+    margin-top: 50px;
+    font-size: 20px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif; }
+  .titulo-nosotros {
+    font-size: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 100px;
+    font-family: Zen Antique; }
+  .icono-nosotros {
+    display: flex;
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto; }
+  /* fin de detalles y posicionamientos */
+  /* fin de main nosotros */
+  /* inicio de main contacto */
+  /* grid de main contacto */
+  .caja-formulario-contacto {
+    display: grid;
+    grid-template-rows: 1/2fr 1fr 1/2fr;
+    grid-template-areas: "info-grid" "textarea-contacto" "enviar-contacto"; }
+  .grid-info {
+    grid-area: info-grid; }
+  .caja-textarea {
+    grid-area: textarea-contacto; }
+  .input-enviar-contacto {
+    grid-area: enviar-contacto; }
+  /* fin de grid main contacto */
+  /* detalles y posicionamiento main contacto */
+  .caja-madre-contacto {
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(../imagenes/fondo-contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0px 200px 0px; }
+  .caja-formulario-contacto {
+    background-color: rgba(185, 172, 172, 0.555);
+    border-radius: 50%;
+    height: 450px;
+    max-width: 1000px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px; }
+  .textaria-contacto {
+    resize: none;
+    width: 500px;
+    height: 200px;
+    background-color: rgba(185, 172, 172, 0.555);
+    border: none;
+    margin-left: auto; }
+  .caja-textarea {
+    margin: 10px auto 10px auto; }
+  .grid-info {
+    margin-left: auto;
+    margin-right: auto; }
+  .input-contacto {
+    width: 150px;
+    background-color: rgba(185, 172, 172, 0.555);
+    border: none; }
+  .input-enviar-contacto {
+    margin-bottom: 50px;
+    background-color: rgba(185, 172, 172, 0.555);
+    border: none;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto; }
+  /* fin de detalles y posicionamiento de main contacto */
+  /* fin de main contacto */ }
+
+/* footer */
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(180, 180, 180, 0.342); }
+
+.titulo-footer {
+  font-family: Zen Antique;
+  font-size: 25px; }
+
+.iconos {
+  text-align: center; }
+
+/* tamaño de los iconos */
+.iconos-footer {
+  width: 50px;
+  height: 50px; }
+
+/* fin del tamaño de los iconos */
+/* fin de footer */
